@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Potability Detector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Water Potability Detection</h1>
+        <form id="waterForm">
+            <div class="grid-container">
+                <div class="form-group">
+                    <label for="ph">pH (0 to 14):</label>
+                    <input type="number" id="ph" name="ph" step="0.1" min="0" max="14" required>
+                </div>
+                <div class="form-group">
+                    <label for="hardness">Hardness (mg/L):</label>
+                    <input type="number" id="hardness" name="hardness" required>
+                </div>
+                <div class="form-group">
+                    <label for="solids">Total Dissolved Solids (ppm):</label>
+                    <input type="number" id="solids" name="solids" required>
+                </div>
+                <div class="form-group">
+                    <label for="chloramines">Chloramines (ppm):</label>
+                    <input type="number" id="chloramines" name="chloramines" required>
+                </div>
+                <div class="form-group">
+                    <label for="sulfate">Sulfate (mg/L):</label>
+                    <input type="number" id="sulfate" name="sulfate" required>
+                </div>
+                <div class="form-group">
+                    <label for="conductivity">Conductivity (μS/cm):</label>
+                    <input type="number" id="conductivity" name="conductivity" required>
+                </div>
+                <div class="form-group">
+                    <label for="organic_carbon">Organic Carbon (ppm):</label>
+                    <input type="number" id="organic_carbon" name="organic_carbon" required>
+                </div>
+                <div class="form-group">
+                    <label for="trihalomethanes">Trihalomethanes (μg/L):</label>
+                    <input type="number" id="trihalomethanes" name="trihalomethanes" required>
+                </div>
+                <div class="form-group">
+                    <label for="turbidity">Turbidity (NTU):</label>
+                    <input type="number" id="turbidity" name="turbidity" required>
+                </div>
+                <div class="form-group full-width">
+                    <button type="submit">Check Potability</button>
+                </div>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
