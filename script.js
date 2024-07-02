@@ -2,7 +2,7 @@ const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 document.getElementById('waterForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const apiKey = "";
+    const apiKey = "CZj1eV4FWz13kRyBQAOykWTp7CaIFjbyT9IJMjq2ax7U";
     const ph = parseFloat(document.getElementById('ph').value);
     const hardness = parseFloat(document.getElementById('hardness').value);
     const solids = parseFloat(document.getElementById('solids').value);
