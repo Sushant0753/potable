@@ -1,3 +1,4 @@
+const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 document.getElementById('waterForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
