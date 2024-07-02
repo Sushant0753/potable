@@ -49,7 +49,7 @@ document.getElementById('waterForm').addEventListener('submit', function(event) 
             console.error("Error parsing token response:", ex);
             return;
         }
-        const scoring_url = "https://private.us-south.ml.cloud.ibm.com/ml/v4/deployments/potable/predictions?version=2021-05-01";
+        const scoring_url = "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/potable/predictions?version=2021-05-01";
         apiPost(scoring_url, tokenResponse.access_token, payload, function (resp) {
             let parsedPostResponse;
             try {
